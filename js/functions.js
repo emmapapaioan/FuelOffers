@@ -2,6 +2,8 @@
 // for the input data of a user
 // trying to register
 function checkData() {
+    let name = document.forms["register-form"]["name"].value;
+    let address = document.forms["register-form"]["address"].value;
     let municipality = document.forms["register-form"]["municipality"].value;
     let prefecture = document.forms["register-form"]["prefecture"].value;
     let fuel = document.forms["register-form"]["fuel"].value;
@@ -9,10 +11,25 @@ function checkData() {
     let email = document.forms["register-form"]["email"].value;
     let password = document.forms["register-form"]["password"].value;
     let confirmPassword = document.forms["register-form"]["confirm-password"].value;
+    
+    // Some of the functions do nothing because of the "required" set property on html tags
+    // Those functions are setted only because it was asked for from the university
+    
+    // Check company name
+    if(name.length==0){
+        alert('Εισάγετε επωνυμία της επιχείρησης.');
+        return false;
+    }
 
-    // Check fuel
-    if (fuel === 'Επιλέξτε είδος καυσίμου' || fuel === null) {
-        window.alert('Επιλέξτε είδος καυσίμου.');
+    // Check vat
+    if (vat.length != 9) {
+        window.alert('Το ΑΦΜ πρέπει να αποτελείται από 9 ψηφία.');
+        return false;
+    }
+
+    // Check address
+    if(address.length==0){
+        alert('Εισάγετε διεύθυνση της επιχείρησης.');
         return false;
     }
 
@@ -28,11 +45,12 @@ function checkData() {
         return false;
     }
 
-    // Check vat
-    if (vat.length != 9) {
-        window.alert('Το ΑΦΜ πρέπει να αποτελείται από 9 ψηφία.');
+    // Check fuel
+    if (fuel === 'Επιλέξτε είδος καυσίμου' || fuel === null) {
+        window.alert('Επιλέξτε είδος καυσίμου.');
         return false;
     }
+
     // Check email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {

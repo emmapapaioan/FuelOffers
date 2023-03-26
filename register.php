@@ -62,7 +62,7 @@ include 'shared/fuels.php';
         <label for="confirm-code">Επιβεβαίωση κωδικού:</label>
         <input type="password" name="confirm-password" id="confirm-password" placeholder="Εισάγετε ξανά τον κωδικό χρήστη" required>
 
-        <input type="submit" name="submit" value="Εγγραφή" class="button" id="register-button">
+        <input type="submit" name="submit" value="Εγγραφή"  id="register-company-button">
 
         <!-- <button type="submit" id="register-company-button">Εγγραφή</button> -->
 

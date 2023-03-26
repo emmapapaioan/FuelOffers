@@ -49,65 +49,22 @@ header {
 #search:hover,
 #register:hover,
 #announcements:hover {
-    /* text-decoration: underline overline #79443b 4px solid;
-    text-underline-offset: 10px; */
-    /* color: #703642;
-    background-color: #cca987;
-    padding-top: 5px;
-    padding-bottom: 5px; */
-    /* border:6px solid #cca987; */
     background-color: #704241;
     padding: 1px;
     color: #efdecd;
-    /*transition:  .2s; /*slow transition of background color change*/
 }
 
 .logo-image {
     background: none;
     vertical-align: middle;
-    /* border-bottom: none;  min-width: 20%; margin:0px;
-    white-space: nowrap; */
-    /* padding-left: 20px;
-    padding-top: 15px; */
     width: 220px;
     min-width: 220px;
+    transition: filter  0.1s;
+    border-radius: 50%;
 }
 
 .logo-image:hover {
-    animation: wiggle 3s linear;
-}
-
-@keyframes wiggle {
-
-    0%,
-    7% {
-        transform: rotateZ(0);
-    }
-
-    15% {
-        transform: rotateZ(-15deg);
-    }
-
-    20% {
-        transform: rotateZ(10deg);
-    }
-
-    25% {
-        transform: rotateZ(-10deg);
-    }
-
-    30% {
-        transform: rotateZ(6deg);
-    }
-
-    35% {
-        transform: rotateZ(-4deg);
-    }
-
-    40%,
-    100% {
-        transform: rotateZ(0);
-    }
+    filter: contrast(200%) drop-shadow(16px 16px 20px #241616);
 }
 
 a {
@@ -124,11 +81,7 @@ a:active {
 .login-button,
 #submit-button,
 #search-button,
-#register-button,
-#register-company input[type=submit],
-#register-company button[type=submit] {
-    /* background-image: url("data:image/svg+xml,%3csvg width='50==100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='71' ry='71' stroke='%23EC3463' stroke-width='10' stroke-dasharray='50%25%2c 13%25' stroke-dashoffset='74' stroke-linecap='butt'/%3e%3c/svg%3e");
-    border-radius: 30px; */
+#register-company-button {
     width: 170px;
     height: 60px;
     background: #986960 no-repeat;
@@ -136,7 +89,6 @@ a:active {
     border-radius: 56px;
     color: #fdf5e6;
     cursor: pointer;
-    font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     font-size: 30px;
     font-weight: 600px;
     outline: 0;
@@ -152,9 +104,7 @@ a:active {
 .login-button:before,
 #search-button:before,
 #submit-button:before,
-#register-button:before,
-#register-company input[type=submit]:before,
-#register-company button[type=submit]:before,
+#register-company-button:before,
 #new-announcement:before {
     background-color: initial;
     background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
@@ -174,12 +124,7 @@ a:active {
 .login-button:hover,
 #search-button:hover,
 #submit-button:hover,
-#register-button:hover,
-#register-company input[type=submit]:hover,
-#register-company button[type=submit]:hover {
-    /* color: black;
-    background-image: none;
-    background-color: #b31242; */
+#register-company-button:hover{
     box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
     transform: scale(1.05);
 }
@@ -190,9 +135,8 @@ a:active {
     #user-login-button,
     .login-button:hover,
     #search-button:hover,
-    #submit-button,
-    #register-company input[type=submit]:hover,
-    #register-company button[type=submit]:hover,
+    #submit-button:hover,
+    #register-company-button:hover,
     #new-announcement:hover {
         background-color: #79443b;
         text-shadow: burlywood;
@@ -201,12 +145,9 @@ a:active {
 
 body {
     background: #efdecd;
-    /* background-position: center;
-    background-size: cover; */
     color: black;
     margin: 0 auto;
     padding: 0;
-    /* min-height: calc(100vh-211px-172px); */
     min-height: 100vh;
 }
 
@@ -225,42 +166,6 @@ body {
     background-color: rgb(145, 205, 145);
 }
 
-/* #filters{
-  display: table;
-  flex-flow: row wrap;
-  align-items: center;
-  font-size: 25px;
-  min-width: 1920px;
-  overflow: hidden;
-}
-
-#filters label{
-    margin: 5px 10px 5px 0;
-    margin-left: 50px;
-    font-weight: bolder;
-    overflow: hidden;
-}
-
-#prefecture, #fuel-type{
-  vertical-align: middle;
-  margin: 5px 10px 5px 37px;
-  padding: 20px;
-  border-radius: 25px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  font-size: 20px;
-  margin-right: 174px;
-  min-width: 600px;
-  overflow: hidden;
-  text-align: center;
-}
-
-#filters button {
-    margin-left: 100px;
-    border: 1px solid #ddd;
-    color: white;
-  } */
-
 #filters {
     display: flex;
     justify-content: space-between;
@@ -268,34 +173,35 @@ body {
     font-size: 25px;
     margin-left: 50px;
     margin-right: 0px;
+    min-width: 86%;
+    max-width: 86%;
 }
 
 #filters label {
     text-align: right;
-    margin-right: 0px;
+    margin-right: 20px;
     font-weight: bolder;
 }
 
-#filters select {
+#filters select,
+#search-button {
     padding-left: 10px;
     min-width: 300px;
     min-height: 50px;
-    margin-right: 400px;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 20px;
+    margin-right: 20px;
 }
 
 #search-button {
-    padding: 5px;
     border-radius: 5px;
     border: none;
     background-color: #986960;
     color: white;
     cursor: pointer;
-    margin-right: 160px;
-    font-family: Roboto, Ubuntu;
     font-weight: 500;
+    margin-left: auto;
 }
 
 #prefecture:hover,
@@ -304,31 +210,17 @@ body {
     text-decoration: none;
 }
 
-/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
-/* @media (max-width: 800px) {
-    #filters select {
-      margin: 10px 0;
-    }
-  
-    #filters {
-      float: unset;
-      flex-direction: row;
-
-    }
-  }  */
-
 #search-container {
     padding-left: 0;
     margin-left: 0;
 }
 
 #search-button {
-    width: 200px;
+    width: 190px;
 }
 
 #results {
     padding: 0px;
-    min-width: 1920px;
     overflow: hidden;
     padding-right: 0;
     margin-right: 0;
@@ -337,10 +229,11 @@ body {
 #results-table {
     margin-left: 50px;
     height: auto;
-    min-width: 90%;
+    min-width: 85%;
+    max-width: 85%;
     display: inline-table;
-    overflow: auto;
-    margin-bottom: 50px;
+    overflow: hidden;
+    margin-bottom: 150px;
 }
 
 .address {
@@ -382,7 +275,7 @@ body {
     padding-left: 30px;
     margin-top: 50px;
     margin-left: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     border: 1px solid #54252e;
     border-radius: 4px;
     max-width: 1500px;
@@ -391,6 +284,10 @@ body {
 #announcements-list1:hover {
     color: #643039;
     transition: 0.2s;
+}
+
+#announcements-list1 {
+    margin-bottom: unset;
 }
 
 #img-announcements1 {
@@ -436,27 +333,7 @@ hr {
 /* End of index page styling */
 
 /*Offer Registration, Registration, Login styling*/
-#new-announcement,
-#register-company input[type=submit],
-#register-company button[type=submit] {
-    background: #986960 no-repeat;
-    border: 0;
-    border-radius: 56px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    outline: 0;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
+
 
 q {
     quotes: none;
@@ -484,11 +361,16 @@ q {
     font-size: 19px;
 }
 
+#register-company q {
+    margin-bottom: 100px;
+    margin-top: 10px;
+
+}
+
 #form-offer-registration input,
 #form-offer-registration select,
 #register-company input,
-#register-company select,
-#register-company option {
+#register-company select {
     vertical-align: middle;
     min-width: 400px;
     padding: unset;
@@ -504,16 +386,6 @@ q {
     border: 1px solid;
 }
 
-#form-offer-registration button,
-#register-company button {
-    width: 230px;
-    margin-left: 77px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-}
-
 #register-company select,
 #form-offer-registration select {
     border: 1px solid;
@@ -525,10 +397,40 @@ q {
     color: #986960;
 }
 
+#register-company select,
+#register-company input{
+    margin-bottom: 10px; 
+}
+
+#register-company input[type="submit"] {
+    margin-left: auto;
+    margin-right: auto;
+    display: table-row;
+}
+
 
 /*End of Offer Registration, Registration, Login styling*/
 
 /* Announcements styling */
+#new-announcement{
+    background: #986960 no-repeat;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
 
 #announcements-id {
     padding-left: 50px;
@@ -538,10 +440,10 @@ q {
     padding-left: 30px;
     margin-top: 20px;
     margin-left: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     border: 1px solid #54252e;
     border-radius: 4px;
-    max-width: 2000px;
+    max-width: 80%;
     overflow-x: hidden;
     overflow-y: scroll;
     font-size: 18pt;
@@ -553,10 +455,10 @@ q {
     overflow-y: auto;
     padding: 20px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border: 1px solid #54252e;
     border-radius: 4px;
-    max-width: 1800px;
+    max-width: 80%;
     height: 300px;
 }
 
@@ -565,7 +467,7 @@ q {
     overflow-y: auto;
     padding: 20px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border: 1px solid #54252e;
     border-radius: 4px;
     width: 91%;
@@ -668,10 +570,6 @@ q {
 }
 
 footer {
-    /*background-image: url(https://img.freepik.com/free-vector/watercolor-abstract-background-with-grunge-effect_1340-4242.jpg?w=826&t=st=16 
-    73207962~exp=1673208562~hmac=99ff108d275ceb603b1127e9e01c1ce19c6a9d7653a8ddf070cdc71e190d2066);*/
-    /*background-image: url(https://cdnb.artstation.com/p/assets/images/images/055/695/539/large/max-hay-render-november-3rd-2022-edit-01.jpg?1667535905);*/
-    /* background-image: url(/images/164163-leaf-brown-amber-branch-wood-3840x2160.jpg); */
     background-image: url(../images/footer.jpg);
     background-position: bottom;
     background-size: cover;
@@ -693,8 +591,6 @@ footer {
 
 #terms:hover,
 #policy:hover {
-    /* text-decoration: underline overline #79443b 4px solid;
-    text-underline-offset: 10px; */
     background-color: #704241;
     padding: 5px;
     color: #efdecd;
@@ -717,7 +613,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-height: 540px; /* Set a maximum height */
+    max-height: 540px; 
     overflow: auto; /* Scrollbar appears when needed */
 }
 
@@ -789,3 +685,6 @@ footer {
     text-align: center;
 }
 
+
+  
+  
