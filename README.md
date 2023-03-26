@@ -19,10 +19,14 @@ To run this application, you will need to have the following software installed 
 ## Run the project
 To run the Fuel-Offers application, follow these steps:
 
-Clone the repository: git clone https://github.com/emmapapaioan/Fuel-Offers.git
-Create a new database in MySQL using phpMyAdmin or the command line: CREATE DATABASE papaioannou;
-Import the database schema from the database/fuel_offers.sql file into the newly created database: mysql -u [username] -p papaioannou < database/fuel_offers.sql
-Update the database connection settings in the config.php file with username "emma" and password 123456 or with your MySQL username and password. If you choose to use your username etc, you must update the shared/database.php 
+Clone the repository: <br>
+```git clone https://github.com/emmapapaioan/Fuel-Offers.git``` <br>
+Create a new database in MySQL using phpMyAdmin or the command line: <br>
+```CREATE DATABASE papaioannou;``` <br>
+Import the database schema from the papaioannou.sql file into the newly created database: <br> 
+```mysql -u [username] -p papaioannou < ./papaioannou.sql``` <br> 
+Update the database connection settings in the config.php file with username "emma" and password 123456 or with your MySQL username and password.<br> 
+If you choose to use your username etc, you must update the shared/database.php <br> 
 Start the Apache web server and navigate to the index.php file in your web browser.
 
 ## Usage
