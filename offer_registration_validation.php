@@ -1,5 +1,5 @@
 <?php
-include 'shared/database.php';
+include './shared/database.php';
 session_start();
 $name = $vat = $address = $prefecture = $municipality = $fuel = $price = $date = '';
 

@@ -1,5 +1,5 @@
 <?php
-include 'shared/database.php';
+include './shared/database.php';
 
 $name = $vat = $address = $prefectureName = $municipality = $fuel = $username = $password = '';
 

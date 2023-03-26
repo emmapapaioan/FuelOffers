@@ -1,5 +1,5 @@
 <?php
-include 'shared/database.php';
+include './shared/database.php';
 
 $title = $date = $img = $content = $source = '';
 

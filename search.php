@@ -1,7 +1,7 @@
 <?php
-include 'shared/header.php';
-include 'shared/prefectures.php';
-include 'shared/fuels.php';
+include './shared/header.php';
+include './shared/prefectures.php';
+include './shared/fuels.php';
 ?>
 
 <fieldset id="search-container">

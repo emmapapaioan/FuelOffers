@@ -1,4 +1,4 @@
-<?php include 'shared/header.php';?>
+<?php include './shared/header.php';?>
 
     <form id="login-form" action="login_validation.php" method="POST">
         <div id="form-item"><h1 id="user-login">Είσοδος χρήστη</h1></div>

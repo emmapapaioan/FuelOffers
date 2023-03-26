@@ -1,6 +1,6 @@
 <?php
-//Connect to the database 
-include 'shared/database.php';
+// Connect to the database 
+include './shared/database.php';
 // Start the session function, to store data of user, in the server temporarily
 session_start();
 ?>
@@ -24,33 +24,45 @@ session_start();
         <nav>
             <ul>
                 <!-- Link type <a> that leads to the home page. If picture is not found, the text "Αρχική Σελίδα" will be shown to user. -->
-                <li><a href="index.php"> <img id="logo-image-td" class="logo-image" src="images/logo5.3.png" alt="Αρχική σελίδα"></a></li>
+                <li>
+                    <a href="index.php"> <img id="logo-image-td" class="logo-image" src="./images/logo5.3.png" alt="Αρχική σελίδα"></a>
+                </li>
 
+                <!-- Retrieve current url to activate background color-->
+                <?php $current_url = $_SERVER["SCRIPT_NAME"]; ?>
                 <!--Home page link-->
-                <li><a href="index.php">
-                        <b id="index">Αρχική</b></a></li>
+                <li>
+                    <a href="index.php" class="<?php echo $current_url == '/index.php' ? 'active' : ''; ?>">
+                        <b id="index">Αρχική</b></a>
+                </li>
 
                 <!--Search link-->
-                <li><a href="search.php">
+                <li><a href="search.php" class="<?php echo $current_url == '/search.php' ? 'active' : '' ?>">
                         <b id="search">Αναζήτηση</b></a></li>
 
                 <!--Display register offers link, only when user is logged in-->
                 <?php if (isset($_SESSION['username'])) : ?>
-                <!-- Output the link register-->
-                <li><a href="offer_registration.php"><b id="register">Καταχώρηση</b></a></li>
+                    <!-- Output the link register-->
+                    <li>
+                        <a href="offer_registration.php" class="<?php echo $current_url == '/offer_registration.php' ? 'active' : '' ?>">
+                            <b id="register">Καταχώρηση</b></a>
+                    </li>
                 <?php endif; ?>
 
                 <!--Announcements link-->
-                <li><a href="announcements.php">
-                        <b id="announcements">Ανακοινώσεις</b></a></li>
+                <li><a href="announcements.php" class="<?php echo $current_url == '/announcements.php' ? 'active' : '' ?>">
+                        <b id="announcements">Ανακοινώσεις</b></a>
+                </li>
 
                 <!--Login and Logout Buttons-->
                 <?php if (isset($_SESSION['username'])) : ?>
                     <li><a href="logout.php"><button class="login-button">
-                                <b id="logout">Logout</b></button></a></li>
+                                <b id="logout">Logout</b></button></a>
+                    </li>
                 <?php else : ?>
                     <li><a href="login.php"><button class="login-button">
-                                <b id="login">Login</b></button></a></li>
+                                <b id="login">Login</b></button></a>
+                    </li>
                 <?php endif; ?>
 
             </ul>

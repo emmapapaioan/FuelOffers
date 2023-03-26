@@ -1,7 +1,7 @@
 <?php
 // Start the session function, to store data of user, in the server temporarily
 session_start();
-include 'shared/database.php';
+include './shared/database.php';
 
 $username = $password = '';
 

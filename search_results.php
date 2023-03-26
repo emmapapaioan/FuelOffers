@@ -1,5 +1,5 @@
 <?php
-include 'shared/database.php';
+include './shared/database.php';
 
 $prefecture = filter_input(INPUT_POST, 'prefecture', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $fuel = filter_input(INPUT_POST, 'fuel', FILTER_SANITIZE_FULL_SPECIAL_CHARS);

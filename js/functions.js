@@ -153,11 +153,10 @@ function popupWindow() {
     var popup = document.getElementById("popup");
     var submitBtn = document.getElementById("submit-btn");
     var closeBtn = document.getElementById("close-btn");
-
-    newAnnouncementBtn.onclick = function() {
-        popup.style.display = "block";
-    }
-
+    var popup = document.getElementById("popup");
+   
+    popup.style.display = "block";
+    
     submitBtn.onclick = function() {
         var title = document.getElementById("title").value;
         var date = document.getElementById("date").value;
@@ -182,3 +181,4 @@ function deleteConfirmationWindow() {
 function checkNewAnnouncementData() {
     // There is no needed/asked for validation at this point
 }
+

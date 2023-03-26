@@ -1,10 +1,10 @@
 <?php
-include 'shared/header.php';
-include 'shared/index_fill.php';
-include 'shared/get_3announcements.php';
+include './shared/header.php';
+include './shared/index_fill.php';
+include './shared/get_3announcements.php';
 ?>
 
-<script src="js/functions.js"></script>
+<script src="./js/functions.js"></script>
 
 <!-- Daily prices summary -->
 <section id="prices">

@@ -1,9 +1,9 @@
 <?php
-include 'shared/header.php';
-include 'shared/get_announcements.php';
+include './shared/header.php';
+include './shared/get_announcements.php';
 ?>
 
-<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="./js/functions.js"></script>
 
 <div id="user-container">
     <h1 id="announcements-id">Ανακοινώσεις</h1>
@@ -11,7 +11,7 @@ include 'shared/get_announcements.php';
     <!-- A button for inputting a new announcement, only when the admin has logged in-->
     <?php if (isset($_SESSION['username'])) : ?>
         <?php if ($_SESSION['role'] == 'admin') : ?>
-            <button id="new-announcement" onclick="popupWindow()">Νέα Ανακοίνωση</button>
+            <button id="new-announcement" onclick="popupWindow()" target="_blank">Νέα Ανακοίνωση</button>
         <?php endif; ?>
     <?php endif; ?>
 </div>

@@ -45,6 +45,7 @@ header {
     border: 1px solid transparent;
 }
 
+.active,
 #index:hover,
 #search:hover,
 #register:hover,

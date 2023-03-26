@@ -1,6 +1,6 @@
 <?php 
-    include 'shared/header.php'; 
-    include 'shared/fuels.php';
+    include './shared/header.php'; 
+    include './shared/fuels.php';
 ?>
 
 <script src="js/functions.js"></script>

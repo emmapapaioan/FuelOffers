@@ -1,5 +1,5 @@
 <?php
-include 'shared/fuels.php';
+include './shared/fuels.php';
 
 // Create an array of fuel types with the id and type values from the database
 $fuelTypes = array();
