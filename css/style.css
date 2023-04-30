@@ -277,7 +277,7 @@ body {
     margin-bottom: 100px;
     border: 1px solid #54252e;
     border-radius: 4px;
-    max-width: 1500px;
+    width: 65%;
 }
 
 #announcements-list1:hover {
@@ -290,7 +290,7 @@ body {
 }
 
 #img-announcements1 {
-    width: 300px;
+    width: 37%;
     vertical-align: middle;
 }
 
@@ -442,7 +442,7 @@ q {
     margin-bottom: 150px;
     border: 1px solid #54252e;
     border-radius: 4px;
-    max-width: 80%;
+    width: 65%;
     overflow-x: hidden;
     overflow-y: scroll;
     font-size: 18pt;
@@ -457,7 +457,7 @@ q {
     margin-bottom: 20px;
     border: 1px solid #54252e;
     border-radius: 4px;
-    max-width: 80%;
+    width: 37%;
     height: 300px;
 }
 
@@ -580,7 +580,7 @@ footer {
     min-height: 200px;
     max-height: 200px;
     font-size: larger;
-    margin: 0px;
+    margin-top: 60px;
     padding: 0px;
     overflow: hidden;
 }

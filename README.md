@@ -11,7 +11,7 @@ To run this application, you will need to have the following software installed 
 
 <ul>
 <li>PHP 7.0 or later </li>
-<li> MySQL 5.7 or later</li>
+<li>MySQL 5.7 or later</li>
 <li>Apache web server</li>
 <li>phpMyAdmin (optional, but recommended)</li>
 </ul>
