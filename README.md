@@ -2,7 +2,7 @@
 
 https://user-images.githubusercontent.com/108992250/227786804-4388f28f-6f5a-4660-b239-f6549894138f.mp4
 
-Fuel-Offers is a web application built using PHP, HTML, JavaScript, and MySQL. The project was built as an assignment for the Hellenic Open University. 
+Fuel-Offers is a web application built using PHP, HTML, CSS, JavaScript, and MySQL. The project was built as an assignment for the Hellenic Open University. 
 It allows users to browse and compare fuel offers from different gas stations and moreover to read announcements uploaded by the admin. 
 The offers are uploaded by users at any time, after their registration.
 
