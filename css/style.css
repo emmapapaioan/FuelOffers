@@ -19,7 +19,6 @@ nav li {
 
 nav {
     width: 100%;
-    min-width: 1920px;
 }
 
 header {
@@ -30,7 +29,6 @@ header {
     background-size: cover;
     background-position: center top;
     width: 100%;
-    min-width: 1920px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -578,13 +576,10 @@ footer {
     top: 100%;
     line-height: 200px;
     width: 100%;
-    min-width: 1920px;
     margin-bottom: 0;
     min-height: 200px;
     max-height: 200px;
     font-size: larger;
-    width: 100%;
-    min-width: 1920px;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
@@ -614,7 +609,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-height: 540px; 
+    max-height: 700px; 
     overflow: auto; /* Scrollbar appears when needed */
 }
 
@@ -623,9 +618,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 800px;
     background-color: #986960;
-    border-radius: 4%;
+    border-radius: 1%;
     border-color: black;
     position: relative;
 }
@@ -649,11 +644,11 @@ footer {
 .popup .content input[type="date"],
 .popup .content input[type="text"],
 .popup .content textarea {
-    padding: 10px;
+    padding: 15px!important;
     margin-bottom: 10px;
     border: none;
-    border-radius: 5px;
-    width: 330px;
+    border-radius: 2px!important;
+    width: 430px!important;
     box-sizing: border-box;
     font-size: 16px;
 }

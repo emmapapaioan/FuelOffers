@@ -35,7 +35,7 @@ include './shared/get_announcements.php';
             <label for="content">Περιεχόμενο:</label>
             <textarea id="content" name="content"></textarea>
 
-            <label for="content">Πηγή ανακοίνωσης:</label>
+            <label for="source">Πηγή ανακοίνωσης:</label>
             <textarea id="source" name="source"></textarea>
 
             <div id="div-btn">
