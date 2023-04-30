@@ -80,7 +80,8 @@ a:active {
 .login-button,
 #submit-button,
 #search-button,
-#register-company-button {
+#register-company-button,
+.xml-button {
     width: 170px;
     height: 60px;
     background: #986960 no-repeat;
@@ -104,7 +105,8 @@ a:active {
 #search-button:before,
 #submit-button:before,
 #register-company-button:before,
-#new-announcement:before {
+#new-announcement:before,
+.xml-button:before {
     background-color: initial;
     background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
     border-radius: 125px;
@@ -123,7 +125,8 @@ a:active {
 .login-button:hover,
 #search-button:hover,
 #submit-button:hover,
-#register-company-button:hover{
+#register-company-button:hover,
+.xml-button:hover {
     box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
     transform: scale(1.05);
 }
@@ -136,7 +139,8 @@ a:active {
     #search-button:hover,
     #submit-button:hover,
     #register-company-button:hover,
-    #new-announcement:hover {
+    #new-announcement:hover,
+    .xml-button:hover {
         background-color: #79443b;
         text-shadow: burlywood;
     }
@@ -681,6 +685,9 @@ footer {
     text-align: center;
 }
 
-
+.xml-button {
+    margin-left: 50px;
+    font-size: 20;
+}
   
   
