@@ -5,6 +5,15 @@
 
 <script src="js/functions.js"></script>
 
+<!-- Only if the user has logged in (so it has role of a registered company) can view this button -->
+<?php if (isset($_SESSION['username'])) : ?>
+    <form class="summary_form" action="./xml/generateXML.php" method="post" target="_blank">
+        <button class="xml-button" type="submit" onclick="downloadXML()">
+            Δημιουργία XML
+        </button>
+    </form>
+<?php endif ?>
+
 <h1 id="register-offer">Καταχώρηση Προσφοράς</h1>
 
 <div id="div-offer-registration">
