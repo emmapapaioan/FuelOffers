@@ -1,0 +1,14 @@
+<!ELEMENT data_report (user_data, offers)>
+<!ELEMENT user_data (name, vat, address, prefecture, municipality)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT vat (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT prefecture (#PCDATA)>
+<!ELEMENT municipality (#PCDATA)>
+<!ELEMENT offers (offer*)>
+<!ELEMENT offer (fuel_type, expiring_date, price, active)>
+<!ELEMENT fuel_type (#PCDATA)>
+<!ELEMENT expiring_date (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT active (#PCDATA)>
+
