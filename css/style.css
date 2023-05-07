@@ -51,19 +51,21 @@ header {
     background-color: #704241;
     padding: 1px;
     color: #efdecd;
+    border-radius: 3px;
 }
 
 .logo-image {
     background: none;
     vertical-align: middle;
     width: 220px;
-    min-width: 220px;
-    transition: filter  0.1s;
+    min-width: 220px; 
     border-radius: 50%;
+    transition: filter 0.1s, transform 0.5s ease-in-out;
 }
 
 .logo-image:hover {
-    filter: contrast(200%) drop-shadow(16px 16px 20px #241616);
+    filter: contrast(110%);
+    transform: scale(1.1);
 }
 
 a {
@@ -593,6 +595,7 @@ footer {
 #policy:hover {
     background-color: #704241;
     padding: 5px;
+    border-radius: 3px;
     color: #efdecd;
 }
 
@@ -687,7 +690,7 @@ footer {
 
 .xml-button {
     margin-left: 50px;
-    font-size: 20;
+    font-size: 20px!important;
 }
   
   

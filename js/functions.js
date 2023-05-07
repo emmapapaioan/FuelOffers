@@ -182,3 +182,6 @@ function checkNewAnnouncementData() {
     // There is no needed/asked for validation at this point
 }
 
+function downloadXML() {
+    window.open('./xml/downloadXML.php');
+}

@@ -22,6 +22,6 @@ if ($conn->connect_error) {
     $message = "Connection with the database failed.";
     echo "<script>console.log('$message');</script>";
 }else{
-    $message = "Successfull connection with the database.";
-    echo "<script>console.log('$message');</script>";
+    // $message = "Successfull connection with the database.";
+    // echo "<script>console.log('$message');</script>";
 }
