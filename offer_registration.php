@@ -9,7 +9,7 @@
 <?php if (isset($_SESSION['username'])) : ?>
     <form class="summary_form" action="./xml/generateXML.php" method="post" target="_blank">
         <button class="xml-button" type="submit" onclick="downloadXML()">
-            Δημιουργία XML
+            Εξαγωγή XML
         </button>
     </form>
 <?php endif ?>

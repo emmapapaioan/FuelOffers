@@ -8,12 +8,10 @@ include './shared/get_3announcements.php';
 
 <!-- Daily prices summary -->
 <section id="prices">
-    
     <?php include "./shared/daily_prices.php"; ?>
-
 </section>
 
-<section id="announcements-list">
+<section id="announcements-section">
     <h1>Τελευταίες Ανακοινώσεις</h1>
     <!--List of last announcements-->
     <ul id="last-announcements-list">

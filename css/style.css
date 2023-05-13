@@ -284,6 +284,7 @@ body {
     border: 1px solid #54252e;
     border-radius: 4px;
     width: 65%;
+    font-size: 14pt;
 }
 
 #announcements-list1:hover {
@@ -451,7 +452,7 @@ q {
     width: 65%;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-size: 18pt;
+    font-size: 14pt;
     height: 800px;
 }
 
@@ -692,5 +693,8 @@ footer {
     margin-left: 50px;
     font-size: 20px!important;
 }
-  
-  
+
+/* Get rid of the dot in all lists */
+ul {
+    list-style-type: none;
+}
