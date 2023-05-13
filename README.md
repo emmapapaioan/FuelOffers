@@ -33,3 +33,5 @@ Start the Apache web server and navigate to the index.php file in your web brows
 Once the application is up and running, users can browse the fuel offers and moreover view announcements uploaded by the admin.
 The unregistered users can view fuel offers and the announcements. The registered users can also upload fuel offers.
 The application also includes an admin panel where authorized users can add and delete announcements.
+
+Additionally, registered users can download an XML file from the site, with their company data. The site uses XSL styling for displaying the XML file and also DTD validation for the XML.
