@@ -4,6 +4,7 @@
 <xsl:template match="/">
     <html>
         <head>
+        <!-- The use of the below file is needed to get the current date through the method getCurrentDate() -->
         <script src="../js/functions.js"></script>
         </head>
         <body style="font-family:Arial; font-size:18px; margin:25px;">

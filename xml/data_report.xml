@@ -2,33 +2,39 @@
 <!DOCTYPE data_report SYSTEM "xml/data_report.dtd">
 <data_report>
   <user_data>
-    <name>Μενέλαος Συνοδινός</name>
-    <vat>123456656</vat>
-    <address>Γούναρη 120</address>
-    <prefecture>Αχαΐας</prefecture>
-    <municipality>Πατρέων</municipality>
+    <name>ΣΑΡΑΝΤΗΣ ΛΑΜΠΡΑΚΑΚΗΣ &amp; ΣΙΑ Ε.Ε</name>
+    <vat>234567543</vat>
+    <address>Νέα Μοναστηρίου 104, Ελευθέριο, 56334, ΘΕΣΣΑΛΟΝΙΚ</address>
+    <prefecture>Θεσσαλονίκης</prefecture>
+    <municipality>Δέλτα</municipality>
   </user_data>
   <offers>
     <offer>
       <fuel_type>Αμόλυβδη Βενζίνη 95</fuel_type>
-      <expiring_date>2023-07-08</expiring_date>
+      <expiring_date>2023-06-10</expiring_date>
       <price>2.00€</price>
       <active>True</active>
     </offer>
     <offer>
       <fuel_type>Αμόλυβδη Βενζίνη 98</fuel_type>
-      <expiring_date>2023-06-10</expiring_date>
-      <price>2.50€</price>
-      <active>True</active>
+      <expiring_date>2023-04-08</expiring_date>
+      <price>2.00€</price>
+      <active>False</active>
     </offer>
     <offer>
       <fuel_type>Αμόλυβδη Βενζίνη 100</fuel_type>
-      <expiring_date>2023-06-09</expiring_date>
-      <price>3.00€</price>
-      <active>True</active>
+      <expiring_date>2023-04-08</expiring_date>
+      <price>2.00€</price>
+      <active>False</active>
     </offer>
     <offer>
       <fuel_type>Πετρέλαιο Θέρμανσης</fuel_type>
+      <expiring_date>2023-04-08</expiring_date>
+      <price>2.00€</price>
+      <active>False</active>
+    </offer>
+    <offer>
+      <fuel_type>Αέριο Κίνησης</fuel_type>
       <expiring_date>2023-04-08</expiring_date>
       <price>2.00€</price>
       <active>False</active>
