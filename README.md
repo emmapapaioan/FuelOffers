@@ -1,4 +1,4 @@
-# Fuel-Offers
+# FuelOffers
 
 https://user-images.githubusercontent.com/108992250/227786804-4388f28f-6f5a-4660-b239-f6549894138f.mp4
 
